@@ -43,8 +43,8 @@ Available properties:
 
 * `<skeleton-heading />`
 
-Boolean img (default: false)
-Boolean circular (default: false)
+    - Boolean img (default: false)
+    - Boolean circular (default: false)
 
 * `<skeleton-text />`
 
