@@ -1,0 +1,110 @@
+$skeleton-line-height: 15px;
+$skeleton-line-spacing: 10px;
+$skeleton-content-default-color: #efefef;
+$skeleton-content-primary-color: #dedede;
+$skeleton-content-border-radius: 5px;
+
+@mixin skeleton-content {
+    background-color: $skeleton-content-default-color;
+    height: $skeleton-line-height;
+    overflow: hidden;
+    position: relative;
+
+    .skeleton-rounded & {
+        border-radius: $skeleton-content-border-radius;
+    }
+
+    .skeleton-centered & {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .skeleton-animation &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        max-width: 1000px;
+        height: 100%;
+        background: linear-gradient(to right, transparent 0%, darken($skeleton-content-primary-color, 3%) 15%, transparent 30%);
+        animation: skeletonAnimation 2.5s linear infinite;
+    }
+}
+
+@keyframes skeletonAnimation {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.skeleton-text {
+    margin-bottom: $skeleton-line-spacing * 2;
+
+    &-line {
+        @include skeleton-content;
+        width: 100%;
+        margin-bottom: $skeleton-line-spacing;
+
+        &:nth-child(4n + 1) {
+            width: 80%;
+        }
+
+        &:nth-child(4n + 2) {
+            width: 100%;
+        }
+
+        &:nth-child(4n + 3) {
+            width: 65%;
+        }
+
+        &:nth-child(4n + 4) {
+            width: 90%;
+        }
+    }
+}
+
+.skeleton-heading {
+    display: flex;
+    margin-bottom: $skeleton-line-spacing * 2;
+
+    &-img {
+        @include skeleton-content;
+        width: $skeleton-line-height * 2 + $skeleton-line-spacing * 3;
+        height: $skeleton-line-height * 2 + $skeleton-line-spacing * 3;
+        margin-right: $skeleton-line-spacing;
+
+        &.rounded {
+            border-radius: 50%;
+        }
+    }
+
+    &-content {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &-title {
+        @include skeleton-content;
+        width: 70%;
+    }
+
+    &-subtitle {
+        @include skeleton-content;
+        width: 90%;
+        margin-top: $skeleton-line-spacing;
+    }
+}
+
+.skeleton-img {
+    @include skeleton-content;
+    margin-bottom: $skeleton-line-spacing;
+    width: 100%;
+    height: 100px;
+}
