@@ -1,6 +1,6 @@
 <template>
     <div class="skeleton-heading">
-        <div class="skeleton-heading-img" :class="{'rounded': imgRounded}" v-if="img"></div>
+        <div class="skeleton-heading-img" :class="{'rounded': circular}" v-if="img"></div>
         <div class="skeleton-heading-content">
             <div class="skeleton-heading-title"></div>
             <div class="skeleton-heading-subtitle"></div>
@@ -16,7 +16,7 @@ export default {
             type: Boolean,
             default: true
         },
-        imgRounded: {
+        circular: {
             type: Boolean,
             default: false
         }
