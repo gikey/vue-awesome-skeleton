@@ -4,7 +4,7 @@ import SkeletonHeading from '~/components/skeletonHeading'
 import SkeletonImg from '~/components/skeletonImg'
 import '~/style.scss';
 
-const skeletonPlugin = {
+const SkeletonComponent = {
     install(Vue) {
         Vue.component('Skeleton', Skeleton)
         Vue.component('SkeletonText', SkeletonText)
@@ -20,7 +20,7 @@ export {
     SkeletonImg
 }
 
-export default skeletonPlugin
+export default SkeletonComponent
 
 
 let Vue = null
@@ -29,4 +29,4 @@ if(typeof window !== 'undefined') {
 } else if(typeof global !== 'undefined') {
     Vue = global.Vue
 }
-Vue && Vue.use(skeletonPlugin)
+Vue && Vue.use(SkeletonComponent)

@@ -1,10 +1,9 @@
 import Vue from 'vue'
 import App from './App'
-// import skeletonPlugin from '../src/vue-awesome-skeleton'
-import skeletonPlugin from '../dist/vue-awesome-skeleton'
+import SkeletonComponent from '../src/vue-awesome-skeleton'
 
 Vue.config.productionTip = false
-Vue.use(skeletonPlugin)
+Vue.use(SkeletonComponent)
 
 new Vue({
     el: '#app',
