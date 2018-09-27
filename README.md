@@ -26,8 +26,8 @@ Vue.use(SkeletonComponent)
 ### Example
 
 ```js
-<skeleton>
-    <skeleton-heading :img="true" :rounded="true" />
+<skeleton :rounded="true">
+    <skeleton-heading :img="true" />
     <skeleton-text :lines="3" />
 </skeleton>
 ```
