@@ -36,14 +36,17 @@ Vue.use(SkeletonComponent);
 Available properties:
 
 * root `<skeleton>`
+
 Boolean animated (default: true)
 Boolean rounded (default: false) - border radius
 Boolean centered (default: false)
 
 * <skeleton-heading />
+
 Boolean img (default: false)
 
 * <skeleton-text />
+
 Number lines (default: 4)
 
 * <skeleton-img />
