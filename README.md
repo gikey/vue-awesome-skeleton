@@ -37,9 +37,9 @@ Available properties:
 
 * root `<skeleton>`
 
-Boolean animated (default: true)
-Boolean rounded (default: false) - border radius
-Boolean centered (default: false)
+    - Boolean animated (default: true)
+    - Boolean rounded (default: false) - border radius
+    - Boolean centered (default: false)
 
 * `<skeleton-heading />`
 
