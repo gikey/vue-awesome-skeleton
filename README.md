@@ -18,9 +18,9 @@ Include plugin in your main.js file.
 
 ```js
 import Vue from "vue";
-import SkeletonComponent from "vue-awesome-skeleton";
+import SkeletonComponent from "vue-awesome-skeleton"
 
-Vue.use(SkeletonComponent);
+Vue.use(SkeletonComponent)
 ```
 
 ### Example
