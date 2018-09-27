@@ -14,7 +14,7 @@ npm install vue-awesome-skeleton --save
 
 ## Usage
 
-Include plugin in your main.js file.
+Include plugin in your `main.js` file.
 
 ```js
 import Vue from "vue";
@@ -37,18 +37,18 @@ Available properties:
 
 * root `<skeleton>`
 
-    - Boolean animated (default: true)
-    - Boolean rounded (default: false) - border radius
-    - Boolean centered (default: false)
+    - Boolean `animated` (default: true)
+    - Boolean `rounded` (default: false) - border radius
+    - Boolean `centered` (default: false)
 
 * `<skeleton-heading />`
 
-    - Boolean img (default: false)
-    - Boolean circular (default: false)
+    - Boolean `img` (default: false)
+    - Boolean `circular` (default: false)
 
 * `<skeleton-text />`
 
-Number lines (default: 4)
+Number `lines` (default: 4)
 
 * `<skeleton-img />`
 
