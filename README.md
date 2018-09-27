@@ -41,15 +41,15 @@ Boolean animated (default: true)
 Boolean rounded (default: false) - border radius
 Boolean centered (default: false)
 
-* <skeleton-heading />
+* `<skeleton-heading />`
 
 Boolean img (default: false)
 
-* <skeleton-text />
+* `<skeleton-text />`
 
 Number lines (default: 4)
 
-* <skeleton-img />
+* `<skeleton-img />`
 
 
 
